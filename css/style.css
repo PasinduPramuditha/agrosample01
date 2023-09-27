@@ -1,0 +1,282 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .golden-background {
+    background: linear-gradient(45deg, white, #ffd700);
+  }
+  
+  .icon-image {
+    max-width: 100px;
+    margin-right: 25px;
+  }
+  
+  .navbar-nav .nav-link {
+    color: navy !important;
+    font-weight: bold;
+  }
+  
+  .navbar-nav .nav-link:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  
+  .login-button, .register-button {
+    padding: 8px 16px;
+    font-size: 16px;
+    margin-left: 10px;
+    border: 1px solid navy;
+    color: navy;
+    border-radius: 5px;
+  }
+  
+  .login-button:hover, .register-button:hover {
+    background-color: rgba(0, 0, 128, 0.1);
+  }
+
+/* Additional styling for Section 2 */
+.animated-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+
+.animated-images img {
+    max-width: 300px; /* Adjust the max-width as needed */
+    max-height: 200px; /* Adjust the max-height as needed */
+    margin: 0 25px;
+    animation: fadeInUp 1s ease-in-out forwards;
+}
+
+.middle-image {
+    margin-bottom: 20px;
+}
+
+.bottom-left-image {
+    transform: translate(-50%, 50%);
+}
+
+.bottom-right-image {
+    transform: translate(50%, 50%);
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+ /* Additional styling for Section 3 */
+#serviceCarousel {
+    max-width: 600px; /* Adjust the max-width as needed */
+    margin: 0 auto;
+  }
+  
+  .carousel-item .carousel-item-content {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left; /* Adjust text alignment */
+    color: black; /* Change the font color to black */
+  }
+  
+  .carousel-item .carousel-item-content h3, .carousel-item .carousel-item-content p {
+    font-weight: bold; /* Make the font bold */
+    margin: 10px 0; /* Add margin between heading and content */
+  }
+  
+  .carousel-item .carousel-item-content img {
+    max-width: 100px; /* Adjust the image max-width as needed */
+    display: block;
+    margin: 0 auto; /* Center the image */
+  }
+ 
+  /* Additional styling for Section 4 cards */
+.card {
+    border: 2px solid navy; /* Dark blue border */
+    border-radius: 20px 20px 0 0; /* Rounded top corners */
+    height: 400px; /* Adjust the height as needed */
+    transition: background 0.3s ease-in-out; /* Smoother transition for hover effect */
+    background: linear-gradient(to bottom right, rgba(255, 223, 0, 0.8), rgba(245, 245, 245, 0.8)); /* Non-hovering golden shine */
+  }
+  
+  .card:hover {
+    background: linear-gradient(to bottom right, rgba(192, 192, 192, 0.8), rgba(169, 169, 169, 0.8)); /* Enhance shining effect on hover */
+  }
+  
+  .btn-round {
+    border-radius: 20px; /* Make buttons round */
+    border: 2px solid navy; /* Navy blue border */
+    color: black; /* Black font color */
+    font-weight: bold; /* Bold font */
+  }
+  
+  .center-btn {
+    display: block;
+    margin: 0 auto; /* Center the button */
+  }
+  /* Additional styling for Section 5 */
+.table-content {
+    padding: 20px;
+    border-radius: 20px;
+    background-color: rgba(192, 192, 192, 0.8); /* Adjust background color as needed */
+  }
+  
+  .table-content h2 {
+    font-size: 24px; /* Adjust the font size as needed */
+  }
+  
+  .table-content p {
+    font-size: 16px; /* Adjust the font size as needed */
+  }
+  /* Additional styling for Section 5 video player */
+.video-container {
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%; /* 16:9 aspect ratio (adjust as needed) */
+  }
+  
+  .custom-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+/* Additional styling for Section 6 */
+.section-box {
+    display: flex;
+    border: 2px solid navy;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .left-section {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .right-section {
+    flex: 0.7;
+  }
+  
+  .right-section img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  .carousel-inner {
+    height: 100%;
+  }
+  
+  .carousel-item {
+    text-align: center;
+  }
+  /* Additional styling for Gallery Section */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+  }
+  
+  .gallery-item img {
+    width: 100%;
+    height: auto;
+    border: 1px solid #ccc; /* Add border for image */
+    border-radius: 10px; /* Optional: Add border-radius for rounded corners */
+  }
+  /* Additional styling for Map and Links Section */
+.contact-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  
+  .map {
+    flex: 1;
+  }
+  
+  .contact-links {
+    flex: 1;
+  }
+  
+  .contact-links h5 {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .contact-links ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .contact-links ul li {
+    margin-bottom: 10px;
+  }
+  
+  .contact-links ul li a {
+    color: #333; /* Adjust the color as needed */
+    text-decoration: none;
+  }
+  
+  .contact-links ul li a:hover {
+    text-decoration: underline;
+  }
+  /* Additional styling for Footer Section */
+.footer {
+    padding: 20px 0;
+  }
+  
+  .footer-table {
+    width: 100%;
+  }
+  
+  .footer-table td {
+    vertical-align: top;
+    padding: 10px;
+  }
+  
+  .footer-icon img {
+    max-width: 50px; /* Adjust the max-width as needed */
+  }
+  
+  .footer-column h6 {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .footer-column ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-column ul li {
+    margin-bottom: 5px;
+  }
+  /* Additional styling for Footer Social Icons */
+.footer-social-icons {
+    text-align: center;
+  }
+  
+  .footer-icon {
+    color: #333; /* Adjust the color as needed */
+    font-size: 24px; /* Adjust the font size as needed */
+    margin: 0 5px;
+  }
+  
+  /* Additional styling for Copyright Banner and Company Icons */
+.copyright-banner {
+    background-color: #bfad6b;
+    color: #fff;
+    padding: 10px 0;
+  }
+  
+  .copyright-text {
+    margin: 0;
+  }
+  
+  .company-icons img {
+    max-width: 30px; /* Adjust the max-width of company icons */
+    margin-right: 10px;
+  }
